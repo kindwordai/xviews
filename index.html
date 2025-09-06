@@ -7,20 +7,28 @@
 
   <!-- Twitter Card Meta Tags -->
   <meta name="twitter:card" content="player">
-  <meta name="twitter:site" content="@@RIKKARD77">
+  <meta name="twitter:site" content="@RIKKARD77">
   <meta name="twitter:title" content="My Test Video">
   <meta name="twitter:description" content="This is a test video autoplaying on Twitter.">
-  <meta name="twitter:image" content="https://yourwebsite.com/thumbnail.jpg">
+  <!-- Transparent thumbnail so no preview shows -->
+  <meta name="twitter:image" content="https://upload.wikimedia.org/wikipedia/commons/c/ca/1x1.png">
+  <!-- Player URL must be HTTPS and point to this page -->
   <meta name="twitter:player" content="https://amazing-churros-55f8f8.netlify.app">
   <meta name="twitter:player:width" content="1280">
   <meta name="twitter:player:height" content="720">
 </head>
-<body>
-  <h2>Video Test Page</h2>
-  <video width="100%" height="auto" controls autoplay muted playsinline>
+<body style="margin:0;padding:0;display:flex;justify-content:center;align-items:center;background:#000;">
+  <!-- Autoplay muted video -->
+  <video 
+    width="100%" 
+    height="100%" 
+    autoplay 
+    muted 
+    playsinline 
+    controls 
+    style="max-width:1280px;max-height:720px;object-fit:cover;">
     <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
     Your browser does not support HTML5 video.
   </video>
 </body>
 </html>
-
